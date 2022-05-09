@@ -106,16 +106,10 @@ img {
 }
 
 .project-container {
-    padding: 24px 24px 24px 32px;
+    padding: 24px;
     border-bottom: solid 3px black;
-    display: flex;
-}
-
-.showing {
-    display: flex;
-}
-
-.hidden {
+    display: inline-block;
+    width: calc(100% - 48px);
 }
 
 .about-container {
@@ -132,8 +126,7 @@ img {
 }
 
 .project-copy-container{
-/*    width: 400px;
-*/    flex-shrink: 0;
+   flex-shrink: 0;
 }
 
 .project-copy-body {
@@ -142,6 +135,7 @@ img {
 
 .project-copy {
     width: 500px;
+    float: left;
 }
 
 .project-copy-intro {
@@ -156,16 +150,18 @@ img {
 }
 
 .project-gallery {
+    width: calc(100% - 500px - 24px - 32px);
     margin-left: 40px;
-}
-
-.project-gallery img {
-    max-width: 100%;
+    float: right;
 }
 
 
 .project-gallery-entry {
-    margin-bottom: 24px;
+    max-width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .odds-img {
@@ -196,18 +192,21 @@ img {
 
 /* Smaller desktop, tablet */
 @media (max-width: 1200px) {
-    .project-container {
-        display: block;
-    }
-
     .project-copy {
         position: relative;
+        float: unset;
     }
 
     .project-gallery {
         height: 100%;
         margin-left: 0px;
         margin-top: 40px;
+        float: unset;
+        width: 100%;
+    }
+
+    .about-container {
+        display: block;
     }
 
     .odds-img {
@@ -262,7 +261,6 @@ img {
     }
 
     .project-container {
-        padding: 24px;
         width: calc(100% - 48px);
         overflow-y: unset;
         
@@ -272,14 +270,14 @@ img {
         width: 100%;
     }
 
-        .odds-img {
-            width: 100%;
-            height: auto;
-        }
+    .odds-img {
+        width: 100%;
+        height: auto;
+    }
 
-        .project-img-caption {
-            width: 100%
-        }
+    .project-img-caption {
+        width: 100%
+    }
 }
 
 
