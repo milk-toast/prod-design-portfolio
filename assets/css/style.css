@@ -239,6 +239,7 @@ img {
     .index-container {
         height: auto;
         border-right: none;
+        border-top: solid 3px black;
         border-bottom: solid 3px black;
         padding: 12px 0 12px 12px;
         position: fixed;
