@@ -25,6 +25,7 @@ function getIndex (galleryName) {
 			voicesIndex++;
 			if (voicesIndex > gallery.length - 1) {voicesIndex = 0;} 
 			if (voicesIndex < 0){voicesIndex = gallery.length;}
+			document.getElementById('voices-page-count').innerHTML = voicesIndex + 1 + '/' + gallery.length;
 			break;
 
 		case 'gallery-entry-cookware':
@@ -32,6 +33,7 @@ function getIndex (galleryName) {
 			cookwareIndex++;
 			if (cookwareIndex > gallery.length - 1) {cookwareIndex = 0;} 
 			if (cookwareIndex < 0){cookwareIndex = gallery.length;}
+			document.getElementById('cookware-page-count').innerHTML = cookwareIndex + 1 + '/' + gallery.length;
 			break;
 
 		case 'gallery-entry-fyf':
@@ -39,6 +41,7 @@ function getIndex (galleryName) {
 			fyfIndex++;
 			if (fyfIndex > gallery.length - 1) {fyfIndex = 0;} 
 			if (fyfIndex < 0){fyfIndex = gallery.length;}
+			document.getElementById('fyf-page-count').innerHTML = fyfIndex + 1 + '/' + gallery.length;
 			break;
 
 		case 'gallery-entry-bluecheck':
@@ -46,6 +49,7 @@ function getIndex (galleryName) {
 			bluecheckIndex++;
 			if (bluecheckIndex > gallery.length - 1) {bluecheckIndex = 0;} 
 			if (bluecheckIndex < 0){bluecheckIndex = gallery.length;}
+			document.getElementById('bluecheck-page-count').innerHTML = bluecheckIndex + 1 + '/' + gallery.length;
 			break;
 
 		case 'gallery-entry-resident':
@@ -53,6 +57,7 @@ function getIndex (galleryName) {
 			residentIndex++;
 			if (residentIndex > gallery.length - 1) {residentIndex = 0;} 
 			if (residentIndex < 0){residentIndex = gallery.length;}
+			document.getElementById('resident-page-count').innerHTML = residentIndex + 1 + '/' + gallery.length;
 			break;
 
 		case 'gallery-entry-goodluck':
@@ -60,6 +65,7 @@ function getIndex (galleryName) {
 			goodluckIndex++;
 			if (goodluckIndex > gallery.length - 1) {goodluckIndex = 0;} 
 			if (goodluckIndex < 0){goodluckIndex = gallery.length;}
+			document.getElementById('goodluck-page-count').innerHTML = goodluckIndex + 1 + '/' + gallery.length;
 			break;
 
 		case 'gallery-entry-leave':
@@ -67,6 +73,7 @@ function getIndex (galleryName) {
 			leaveIndex++;
 			if (leaveIndex > gallery.length - 1) {leaveIndex = 0;} 
 			if (leaveIndex < 0){leaveIndex = gallery.length;}
+			document.getElementById('leave-page-count').innerHTML = leaveIndex + 1 + '/' + gallery.length;
 			break;
 
 		case 'gallery-entry-mybenefits':
@@ -74,6 +81,7 @@ function getIndex (galleryName) {
 			mybenefitsIndex++;
 			if (mybenefitsIndex > gallery.length - 1) {mybenefitsIndex = 0;} 
 			if (mybenefitsIndex < 0){mybenefitsIndex = gallery.length;}
+			document.getElementById('mybenefits-page-count').innerHTML = mybenefitsIndex + 1 + '/' + gallery.length;
 			break;
 
 		case 'gallery-entry-ends':
@@ -81,6 +89,7 @@ function getIndex (galleryName) {
 			endsIndex++;
 			if (endsIndex > gallery.length - 1) {endsIndex = 0;} 
 			if (endsIndex < 0){endsIndex = gallery.length;}
+			document.getElementById('ends-page-count').innerHTML = endsIndex + 1 + '/' + gallery.length;
 			break;
 	}
 	return i;

@@ -90,8 +90,9 @@
 				</div>
 
 				<!-- Gallery -->
-				<a href="#" onclick="nextSlide(1, 'gallery-entry-voices');return false;">
-					<div class="project-gallery">
+				
+				<div class="project-gallery">
+					<a href="#" onclick="nextSlide(1, 'gallery-entry-voices');return false;">
 						<div class="pagination-helper">
 							<video class="project-gallery-entry gallery-entry-voices" autoplay muted loop playsinline width="100%">
 								<source src="assets/img/voices/voices-vid.mp4" type="video/mp4">
@@ -100,9 +101,9 @@
 							<img class="project-gallery-entry gallery-entry-voices" src="assets/img/voices/voices-1.png" style="display:none;">
 							<img class="project-gallery-entry gallery-entry-voices" src="assets/img/voices/voices-2.gif" style="display:none;">
 						</div>
-						
-					</div>
-				</a>	
+					</a>
+					<p id="voices-page-count" class="project-gallery-page-counter">1/3</p>
+				</div>	
 			</div>
 
 
@@ -138,6 +139,7 @@
 					<div class="pagination-helper">
 						<img class="project-gallery-entry" src="assets/img/recipes/recipes-1.png">
 					</div>
+					<p id="recipes-page-count" class="project-gallery-page-counter">1/1</p>
 				</div>
 			</div>
 
@@ -170,8 +172,9 @@
 				</div>
 
 				<!-- Gallery -->
-				<a href="#" onclick="nextSlide(1, 'gallery-entry-cookware');return false;">
-					<div class="project-gallery">
+				
+				<div class="project-gallery">
+					<a href="#" onclick="nextSlide(1, 'gallery-entry-cookware');return false;">
 						<div class="pagination-helper">
 							<video class="project-gallery-entry gallery-entry-cookware" autoplay muted loop playsinline width="100%">
 									<source src="assets/img/cookware/cookware-vid.mp4" type="video/mp4">
@@ -179,8 +182,9 @@
 								</video>
 							<img class="project-gallery-entry gallery-entry-cookware" src="assets/img/cookware/cookware-1.png" loading="lazy"  style="display:none;">
 						</div>
-					</div>
-				</a>
+					</a>
+					<p id="cookware-page-count" class="project-gallery-page-counter">1/2</p>
+				</div>
 			</div>
 
 
@@ -221,6 +225,7 @@
 							<img class="project-gallery-entry gallery-entry-fyf" src="assets/img/fyf/fyf-2.png" loading="lazy"  style="display:none;">
 						</div>
 					</a>
+					<p id="fyf-page-count" class="project-gallery-page-counter">1/2</p>
 				</div>
 			</div>
 
@@ -249,14 +254,16 @@
 				</div>
 
 				<!-- Gallery -->
-				<a href="#" onclick="nextSlide(1, 'gallery-entry-bluecheck');return false;">
 					<div class="project-gallery">
-						<div class="pagination-helper">
-							<img class="project-gallery-entry gallery-entry-bluecheck" src="assets/img/bluecheck/bluecheck-1.png" loading="lazy">
-							<img class="project-gallery-entry gallery-entry-bluecheck" src="assets/img/bluecheck/bluecheck-2.png" loading="lazy" style="display:none;">
-							<img class="project-gallery-entry gallery-entry-bluecheck" src="assets/img/bluecheck/bluecheck-3.png" loading="lazy" style="display:none;">
-							<img class="project-gallery-entry gallery-entry-bluecheck" src="assets/img/bluecheck/bluecheck-4.png" loading="lazy" style="display:none;">
-						</div>
+						<a href="#" onclick="nextSlide(1, 'gallery-entry-bluecheck');return false;">
+							<div class="pagination-helper">
+								<img class="project-gallery-entry gallery-entry-bluecheck" src="assets/img/bluecheck/bluecheck-1.png" loading="lazy">
+								<img class="project-gallery-entry gallery-entry-bluecheck" src="assets/img/bluecheck/bluecheck-2.png" loading="lazy" style="display:none;">
+								<img class="project-gallery-entry gallery-entry-bluecheck" src="assets/img/bluecheck/bluecheck-3.png" loading="lazy" style="display:none;">
+								<img class="project-gallery-entry gallery-entry-bluecheck" src="assets/img/bluecheck/bluecheck-4.png" loading="lazy" style="display:none;">
+							</div>
+						</a>
+						<p id="bluecheck-page-count" class="project-gallery-page-counter">1/4</p>
 					</div>
 				</a>
 			</div>
@@ -286,14 +293,16 @@
 				</div>
 
 				<!-- Gallery -->
-				<a href="#" onclick="nextSlide(1, 'gallery-entry-resident');return false;">
-					<div class="project-gallery">
+				
+				<div class="project-gallery">
+					<a href="#" onclick="nextSlide(1, 'gallery-entry-resident');return false;">
 						<div class="pagination-helper">
 							<img class="project-gallery-entry gallery-entry-resident" src="assets/img/resident/resident-1.png" loading="lazy">
 							<img class="project-gallery-entry gallery-entry-resident" src="assets/img/resident/resident-2.png" loading="lazy" style="display:none;">
 						</div>
-					</div>
-				</a>
+					</a>
+					<p id="resident-page-count" class="project-gallery-page-counter">1/2</p>
+				</div>
 			</div>
 
 
@@ -323,15 +332,17 @@
 				</div>
 
 				<!-- Gallery -->
-				<a href="#" onclick="nextSlide(1, 'gallery-entry-goodluck');return false;">
-					<div class="project-gallery">
+				
+				<div class="project-gallery">
+					<a href="#" onclick="nextSlide(1, 'gallery-entry-goodluck');return false;">
 						<div class="pagination-helper">
 							<img class="project-gallery-entry gallery-entry-goodluck" src="assets/img/goodluck/goodluck-1.png" loading="lazy">
 							<img class="project-gallery-entry gallery-entry-goodluck" src="assets/img/goodluck/goodluck-2.png" loading="lazy" style="display:none;">
 							<img class="project-gallery-entry gallery-entry-goodluck" src="assets/img/goodluck/goodluck-3.png" loading="lazy" style="display:none;">
 						</div>
-					</div>
-				</a>
+					</a>
+					<p id="goodluck-page-count" class="project-gallery-page-counter">1/3</p>
+				</div>
 			</div>
 
 
@@ -364,15 +375,16 @@
 				</div>
 
 				<!-- Gallery -->
-				<a href="#" onclick="nextSlide(1, 'gallery-entry-leave');return false;">
-					<div class="project-gallery">
+				<div class="project-gallery">
+					<a href="#" onclick="nextSlide(1, 'gallery-entry-leave');return false;">
 						<div class="pagination-helper">
 							<img class="project-gallery-entry  gallery-entry-leave" src="assets/img/leave/leave-1.png" loading="lazy">
 							<img class="project-gallery-entry  gallery-entry-leave" src="assets/img/leave/leave-2.png" loading="lazy" style="display:none;">
 							<img class="project-gallery-entry  gallery-entry-leave" src="assets/img/leave/leave-3.png" loading="lazy" style="display:none;">
 						</div>
-					</div>
-				</a>
+					</a>
+					<p id="leave-page-count" class="project-gallery-page-counter">1/3</p>
+				</div>
 			</div>
 
 
@@ -406,13 +418,16 @@
 				</div>
 
 				<!-- Gallery -->
-				<a href="#" onclick="nextSlide(1, 'gallery-entry-mybenefits');return false;">
+				
 					<div class="project-gallery">
-						<div class="pagination-helper">
-							<img class="project-gallery-entry  gallery-entry-mybenefits" src="assets/img/mybenefits/mybenefits-1.png" loading="lazy">
-							<img class="project-gallery-entry  gallery-entry-mybenefits" src="assets/img/mybenefits/mybenefits-2.png" loading="lazy" style="display:none;">
-							<img class="project-gallery-entry  gallery-entry-mybenefits" src="assets/img/mybenefits/mybenefits-3.png" loading="lazy" style="display:none;">
-						</div>
+						<a href="#" onclick="nextSlide(1, 'gallery-entry-mybenefits');return false;">
+							<div class="pagination-helper">
+								<img class="project-gallery-entry  gallery-entry-mybenefits" src="assets/img/mybenefits/mybenefits-1.png" loading="lazy">
+								<img class="project-gallery-entry  gallery-entry-mybenefits" src="assets/img/mybenefits/mybenefits-2.png" loading="lazy" style="display:none;">
+								<img class="project-gallery-entry  gallery-entry-mybenefits" src="assets/img/mybenefits/mybenefits-3.png" loading="lazy" style="display:none;">
+							</div>
+						</a>
+						<p id="mybenefits-page-count" class="project-gallery-page-counter">1/3</p>
 					</div>
 				</a>
 			</div>
