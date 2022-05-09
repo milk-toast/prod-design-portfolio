@@ -180,11 +180,11 @@ a:hover .project-gallery-page-counter {
 }
 
 .odds-img {
-    height: 539px
+    height: 350px
 }
 
 .project-odds-row {
-    padding-bottom: 48px;
+    padding-bottom: 16px;
 }
 
 .project-img-medium {
@@ -199,6 +199,17 @@ a:hover .project-gallery-page-counter {
     margin-top: 4px;
     font-size: 14px;
     width: 539px;
+}
+
+
+.contact-footer {
+    padding: 24px;
+}
+
+.contact-footer-text, .contact-footer-text a {
+    font-size: 24px;
+    line-height: 1.1;
+    padding-bottom: 4px;
 }
 
 
@@ -293,6 +304,10 @@ a:hover .project-gallery-page-counter {
 
     .project-img-caption {
         width: 100%
+    }
+
+    .contact-footer-text {
+        padding-bottom: 12px;
     }
 }
 
