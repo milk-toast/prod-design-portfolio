@@ -153,11 +153,18 @@ img {
     width: calc(100% - 500px - 24px - 32px);
     margin-left: 40px;
     float: right;
+    position: relative;
+    background-color: orange;
+}
+
+.pagination-helper {  
+    padding-top: 73.611111%;
 }
 
 
 .project-gallery-entry {
     max-width: 100%;
+    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
@@ -203,6 +210,7 @@ img {
         margin-top: 40px;
         float: unset;
         width: 100%;
+        max-width: 800px;
     }
 
     .about-container {
