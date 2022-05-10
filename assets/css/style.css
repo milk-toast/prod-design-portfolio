@@ -214,6 +214,10 @@ a:hover .project-gallery-page-counter {
     line-height: 1.1;
 }
 
+.copyright-footer-text {
+    padding-top: 24px;
+}
+
 
 
 /* ----------- RESPONSIVE ----------- */
