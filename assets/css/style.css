@@ -112,8 +112,12 @@ img {
     width: calc(100% - 48px);
 }
 
+#project-about {
+}
+
 .about-container {
     display: flex;
+    margin-bottom: -20px;
 }
 
 .about-column {
