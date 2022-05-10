@@ -180,19 +180,11 @@ a:hover .project-gallery-page-counter {
 }
 
 .odds-img {
-    height: 350px
+    max-width: 100%;
 }
 
 .project-odds-row {
     padding-bottom: 16px;
-}
-
-.project-img-medium {
-    max-width: 600px!important;
-}
-
-.project-image-small {
-    max-width: 375px!important;
 }
 
 .project-img-caption {
@@ -234,10 +226,6 @@ a:hover .project-gallery-page-counter {
 
     .about-container {
         display: block;
-    }
-
-    .odds-img {
-        height: 400px
     }
 
     .project-img-caption {
