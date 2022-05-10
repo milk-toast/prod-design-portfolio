@@ -68,7 +68,7 @@ img {
 }
 
 #logotype {
-    width: 20px;
+    width: 24px;
 }
 
 
@@ -255,13 +255,13 @@ a:hover .project-gallery-page-counter {
     }
 
     #logotype {
-        width: 18px;
+        width: 24px;
         transform-origin: top left;
         transform: rotate(-90deg) translate(-100%);
     }
 
     .logo {
-        height: 20px;
+        height: 24px;
     }
 
     .index-container {
@@ -286,7 +286,7 @@ a:hover .project-gallery-page-counter {
 
     .projects {
         overflow-y: unset;
-        padding-top: 45px;
+        padding-top: 48px;
     }
 
     .project-container {
