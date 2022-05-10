@@ -204,12 +204,12 @@ a:hover .project-gallery-page-counter {
 
 .contact-footer {
     padding: 24px;
+    padding-bottom: 72px;
 }
 
 .contact-footer-text, .contact-footer-text a {
     font-size: 24px;
     line-height: 1.1;
-    padding-bottom: 4px;
 }
 
 
@@ -265,7 +265,7 @@ a:hover .project-gallery-page-counter {
     .index-container {
         height: auto;
         border-right: none;
-        border-top: solid 3px black;
+        /*border-top: solid 3px black;*/
         border-bottom: solid 3px black;
         padding: 12px 0 12px 24px;
         position: fixed;
@@ -307,7 +307,6 @@ a:hover .project-gallery-page-counter {
     }
 
     .contact-footer-text {
-        padding-bottom: 12px;
     }
 }
 
