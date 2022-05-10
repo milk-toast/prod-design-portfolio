@@ -181,14 +181,21 @@ a:hover .project-gallery-page-counter {
 
 .odds-img {
     max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
 }
 
 .project-odds-row {
     padding-bottom: 16px;
+    background-color: #eaeaea;
 }
 
 .project-img-caption {
-    margin-top: 4px;
+    padding-top: 4px;
     font-size: 14px;
     width: 539px;
 }
