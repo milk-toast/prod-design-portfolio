@@ -160,6 +160,10 @@ img {
     position: relative;
 }
 
+.project-gallery a:hover {
+    cursor: url("next-cursor.png"), auto !important;
+}
+
 .pagination-helper {  
     padding-top: 73.611111%;
     background-color: orange;
