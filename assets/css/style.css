@@ -57,22 +57,24 @@ img {
     height: 100%;
 }
 
-.index-container {
-    height: calc(100% - 24px);
-    border-right: solid 3px black;
-    padding: 12px;
-    display: flex;
-    flex-shrink: 0;
-    /*background-color: #F6C745;*/
+.logo-container {
+    height: auto;
+    width: 448px;
+    padding: 16px 24px 12px 24px;
+    display: inline-block;
     background-color: orange;
+    border-bottom: solid 3px black;
 }
 
 #logotype {
-    width: 24px;
 }
 
 
-/* ----------- INDEX LIST ----------- */
+
+.about-column {
+    width: calc(100% + 48px);
+}
+
 
 .index-list a {
     text-decoration: none!important;
@@ -97,12 +99,18 @@ img {
     margin-left: 12px;
 }
 
+.left-column {
+    border-right: solid 3px black;
+}
+
 
 
 /* ----------- PROJECT ----------- */
 .projects {
     display: block;
     overflow-y: scroll;
+    float: right;
+    width: calc(100%-448px);
 }
 
 .project-container {
@@ -112,22 +120,32 @@ img {
     width: calc(100% - 48px);
 }
 
-#project-about {
-}
-
 .about-container {
-    display: flex;
-    margin-bottom: -20px;
+    display: block;
+    background-color: #d6d6d6;
+    padding: 24px;
+    height: calc(100% - 54.5px - 48px - 70px - 4px);
 }
 
 .about-column {
-    width: 500px;
-    margin-right: 40px;
+    width: 400px;
 }
 
 .about-header {
     font-size: 24px;
 }
+
+.update-footer {
+    padding: 24px;
+    width: calc(100%-48px);
+    background-color: #d6d6d6;
+    border-top: solid 3px black;
+}
+
+.update-arrow {
+
+}
+
 
 .project-copy-container{
    flex-shrink: 0;
@@ -138,7 +156,7 @@ img {
 }
 
 .project-copy {
-    width: 500px;
+    width: 400px;
     float: left;
 }
 
@@ -154,7 +172,7 @@ img {
 }
 
 .project-gallery {
-    width: calc(100% - 500px - 24px - 32px);
+    width: calc(100% - 448px);
     margin-left: 40px;
     float: right;
     position: relative;
@@ -227,10 +245,12 @@ a:hover .project-gallery-page-counter {
 /* ----------- RESPONSIVE ----------- */
 
 /* Smaller desktop, tablet */
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
     .project-copy {
         position: relative;
         float: unset;
+        width: 100%;
+        max-width: 800px;
     }
 
     .project-gallery {
@@ -253,27 +273,19 @@ a:hover .project-gallery-page-counter {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .page-content{
         display:  block;
     }
 
-    #logotype {
-        width: 24px;
-        transform-origin: top left;
-        transform: rotate(-90deg) translate(-100%);
-    }
-
-    .logo {
-        height: 24px;
-    }
-
-    .index-container {
-        height: auto;
+    .left-column {
         border-right: none;
-        /*border-top: solid 3px black;*/
-        border-bottom: solid 3px black;
-        padding: 12px 0 12px 24px;
+        width: 100%;
+    }
+
+
+    .logo-container {
+        height: auto;
         position: fixed;
         width: 100%;
         z-index: 100;
@@ -282,15 +294,24 @@ a:hover .project-gallery-page-counter {
 
     .about-container {
         display: block;
+        border-right: 0px;
+        padding-top: calc(51.5px + 28px); 
+
     }
 
     .about-column {
+
         width: 100%;
+    }
+
+    .update-footer {
+        padding-top: 0px;
+        border-top: none;
+        border-bottom: solid 3px black;
     }
 
     .projects {
         overflow-y: unset;
-        padding-top: 48px;
     }
 
     .project-container {
