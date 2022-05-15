@@ -1,7 +1,7 @@
 // Set base index for all galleries
 var voicesIndex = 0;
 var cookwareIndex = 0;
-var fyfIndex = 0;
+var quizadIndex = 0;
 var bluecheckIndex = 0;
 var residentIndex = 0;
 var goodluckIndex = 0;
@@ -36,12 +36,12 @@ function getIndex (galleryName) {
 			document.getElementById('cookware-page-count').innerHTML = cookwareIndex + 1 + '/' + gallery.length;
 			break;
 
-		case 'gallery-entry-fyf':
-			i = fyfIndex;
-			fyfIndex++;
-			if (fyfIndex > gallery.length - 1) {fyfIndex = 0;} 
-			if (fyfIndex < 0){fyfIndex = gallery.length;}
-			document.getElementById('fyf-page-count').innerHTML = fyfIndex + 1 + '/' + gallery.length;
+		case 'gallery-entry-quizad':
+			i = quizadIndex;
+			quizadIndex++;
+			if (quizadIndex > gallery.length - 1) {quizadIndex = 0;} 
+			if (quizadIndex < 0){quizadIndex = gallery.length;}
+			document.getElementById('quizad-page-count').innerHTML = quizadIndex + 1 + '/' + gallery.length;
 			break;
 
 		case 'gallery-entry-bluecheck':
