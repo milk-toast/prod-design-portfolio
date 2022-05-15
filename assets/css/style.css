@@ -59,7 +59,7 @@ img {
 
 .logo-container {
     height: auto;
-    width: 400px;
+    width: 350px;
     padding: 16px 24px 12px 24px;
     display: inline-block;
     background-color: orange;
@@ -128,7 +128,7 @@ img {
 }
 
 .about-column {
-    width: 400px;
+    width: 350px;
 }
 
 .about-header {
@@ -156,7 +156,7 @@ img {
 }
 
 .project-copy {
-    width: 400px;
+    width: 350px;
     float: left;
 }
 
@@ -172,7 +172,7 @@ img {
 }
 
 .project-gallery {
-    width: calc(100% - 448px);
+    width: calc(100% - 350px - 48px);
     margin-left: 40px;
     float: right;
     position: relative;
@@ -223,7 +223,7 @@ a:hover .project-gallery-page-counter {
 .project-img-caption {
     padding-top: 4px;
     font-size: 14px;
-    width: 539px;
+    width: 100%
 }
 
 
@@ -245,7 +245,7 @@ a:hover .project-gallery-page-counter {
 /* ----------- RESPONSIVE ----------- */
 
 /* Smaller desktop, tablet */
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .project-copy {
         position: relative;
         float: unset;
@@ -264,10 +264,6 @@ a:hover .project-gallery-page-counter {
 
     .about-container {
         display: block;
-    }
-
-    .project-img-caption {
-        width: 400px;
     }
 
 }
@@ -327,10 +323,6 @@ a:hover .project-gallery-page-counter {
     .odds-img {
         width: 100%;
         height: auto;
-    }
-
-    .project-img-caption {
-        width: 100%
     }
 
     .contact-footer-text {
