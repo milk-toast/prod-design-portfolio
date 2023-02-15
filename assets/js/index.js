@@ -1,4 +1,5 @@
 // Set base index for all galleries
+var mealplanIndex = 0;
 var pricingselectIndex = 0;
 var voicesIndex = 0;
 var cookwareIndex = 0;
@@ -21,6 +22,13 @@ function getIndex (galleryName) {
 	var gallery = getGallery(galleryName);
 
 	switch (galleryName) {
+		case 'gallery-entry-mealplan':
+			i = mealplanIndex;
+			mealplanIndex++;
+			if (mealplanIndex > gallery.length - 1) {mealplanIndex = 0;} 
+			if (mealplanIndex < 0){mealplanIndex = gallery.length;}
+			document.getElementById('pricingselect-page-count').innerHTML = mealplanIndex + 1 + '/' + gallery.length;
+			break;
 		case 'gallery-entry-pricingselect':
 			i = pricingselectIndex;
 			pricingselectIndex++;
