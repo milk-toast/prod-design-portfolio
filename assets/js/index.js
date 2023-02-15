@@ -1,4 +1,5 @@
 // Set base index for all galleries
+var pricingselectIndex = 0;
 var voicesIndex = 0;
 var cookwareIndex = 0;
 var quizadIndex = 0;
@@ -20,6 +21,13 @@ function getIndex (galleryName) {
 	var gallery = getGallery(galleryName);
 
 	switch (galleryName) {
+		case 'gallery-entry-pricingselect':
+			i = pricingselectIndex;
+			pricingselectIndex++;
+			if (pricingselectIndex > gallery.length - 1) {pricingselectIndex = 0;} 
+			if (pricingselectIndex < 0){pricingselectIndex = gallery.length;}
+			document.getElementById('pricingselect-page-count').innerHTML = pricingselectIndex + 1 + '/' + gallery.length;
+			break;
 		case 'gallery-entry-voices':
 			i = voicesIndex;
 			voicesIndex++;
